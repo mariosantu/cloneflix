@@ -1,0 +1,150 @@
+/*--RESET--*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+img {
+    width: 100%;
+  }
+
+/*--RESET END--*/
+
+/*--COMMON--*/
+
+body {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*--COMMON END--*/
+
+/*--HEADER--*/
+
+header {
+  background-color: rgba(36, 36, 36,0.3);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+}
+
+.logo img,
+.title_section img {
+  height: 50px;
+  width: auto;
+}
+
+.filter-container{
+  display: flex;
+}
+
+
+input {
+  outline: none;
+  border: none;
+  background-color: rgb(156, 152, 152);
+  border-radius: 15px 0px 0px 5px;
+  padding: 15px;
+}
+
+button {
+  background-color: rgb(156, 152, 152);
+  border-radius: 0px 10px 8px 0px;
+  border: none;
+  font-size: 17px;
+  padding: 4px;
+}
+
+button i {
+  cursor: pointer;
+}
+
+/*--HEADER END--*/
+
+/*--MAIN--*/
+
+/*--structure--*/
+
+main {
+  min-width: 1800px;
+}
+
+.container {
+  padding: 45px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.films {
+  min-width: 200px;
+  width: calc( ( 100% / 5 ) - 80px );
+  background-color: rgb(36, 36, 36);
+  padding: 6px;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/*--structure--*/
+
+/*--details start--*/
+
+.lang,
+.vote,
+.title,
+.overview,
+.original-title {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.called-details {
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title_section {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 50px;
+  padding-top: 100px;
+}
+
+.lang-img {
+  height: 13px;
+  width: auto;
+}
+
+/*--details end--*/
+
+/*--show/hide section--*/
+.copertina {
+  display: block;
+}
+
+.details {
+  display: none;
+  list-style-type: none;
+}
+
+.films:hover .copertina {
+  display: none;
+}
+
+.films:hover .details {
+  display: block;
+}
+/*--show/hide section end--*/
+
+/*--MAIN END--*/
